@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+
+<div class="mt-5 ">
+<div class="text-center">
+<img src="{% static 'core/images/pic1.png'%}" alt="ProfilePic" class="img-thumbnil" 
+width ="250px" height="250px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+<h1 class="font-weight-bold st-font">Hello,</h1>
+<div class="px-4" style="line-height: 2rem; ">
+<p style="text-indent:100px;">I am <b 
+class="text-warning ">Ram Uday Kumar</b> having 1 years of 
+full-stack web devlopment experience for global businesses,
+I offer the technical expertise you are seeking for your web
+devloper position.</p>
+
+<p>Inquisitive, energetic computer science specialist skilled in leadership, with a strong foundation in math, logic, and cross-platform
+coding. Equipped with a diverse and promising skill-set. Able to effectively, self-manage during independent projects, as well as
+collaborate as part of a productive team.</p>
+<p>Since earning my bachelor's degree computes science and engineering
+from<b class="text-warning"> MAKAUT University</b>, I have served as a web devloper at <b class="text-warning">
+SOCIALNews</b>, In this position i have led web devlopment project for cleints in diverse 
+industries including, technology, manufacturing, retail and financial services.
+</p>
+</div>
+</div>
+
+<div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my3 mr-5">Hire Me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my3">Contact</a>
+</div>
+
+</div>
+
+{% endblock content %}
